@@ -1,0 +1,2503 @@
+{
+    "name": "FightLab",
+    "verificationLevel": "HIGH",
+    "explicitContentFilter": "ALL_MEMBERS",
+    "defaultMessageNotifications": "ONLY_MENTIONS",
+    "afk": {
+        "name": "AFK",
+        "timeout": 900
+    },
+    "widget": {
+        "channel": null
+    },
+    "channels": {
+        "categories": [
+            {
+                "name": "🛬Arrivage",
+                "permissions": [
+                    {
+                        "roleName": "Non vérifié",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🛬arrivage",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🛬Arrivage",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "📜règlement",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🛬Arrivage",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "1024",
+                                "deny": "262208"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "264256"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "📰Informations",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "2048"
+                    },
+                    {
+                        "roleName": "Non vérifié",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_NEWS",
+                        "name": "📣annonces",
+                        "nsfw": false,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "2112"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "133120",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1088"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": true,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_NEWS",
+                        "name": "🎁giveaway",
+                        "nsfw": false,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "1024",
+                                "deny": "68719478848"
+                            },
+                            {
+                                "roleName": "GiveawayBot",
+                                "allow": "1024",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": true,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_NEWS",
+                        "name": "🃏tournois",
+                        "nsfw": false,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "2112"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": true,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_NEWS",
+                        "name": "📋patchnote",
+                        "nsfw": false,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "2048"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": true,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_NEWS",
+                        "name": "📲connect",
+                        "nsfw": false,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "264256"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": true,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "👑top-kills",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "1024",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "3072"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "❓faq",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "⭐boutique",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "264256"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔥hitman",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📰Informations",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "📝Salons textuels",
+                "permissions": [
+                    {
+                        "roleName": "Modérateur 📞",
+                        "allow": "3072",
+                        "deny": "0"
+                    },
+                    {
+                        "roleName": "Non vérifié",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "Mute ❗️",
+                        "allow": "0",
+                        "deny": "264256"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "discussion",
+                        "parent": "📝Salons textuels",
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "17179942912",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "274877906944",
+                                "deny": "0"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💬global-fr",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📝Salons textuels",
+                        "topic": "!commande : /info  -  /hitman  -  /ip - /baninfo",
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "311296"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💬global-en",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📝Salons textuels",
+                        "topic": "!command : /infoen  -  /hitmanen  -  /ip - /baninfoen",
+                        "permissions": [
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "311296"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔎recruitment-crew",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📝Salons textuels",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "311296"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔫arènes",
+                        "nsfw": false,
+                        "rateLimitPerUser": 5,
+                        "parent": "📝Salons textuels",
+                        "topic": "Partager vos configurations d'arènes, cherchez des joueurs avec qui jouer, organisez vos combats.",
+                        "permissions": [
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3072",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "📊stats",
+                        "nsfw": false,
+                        "rateLimitPerUser": 10,
+                        "parent": "📝Salons textuels",
+                        "topic": "Afin d'obtenir ses statistiques, il vous suffit de faire : .stats   |\nIn order to get your statistics, you just have to do : .stats",
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3072",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💜clips",
+                        "nsfw": false,
+                        "rateLimitPerUser": 21600,
+                        "parent": "📝Salons textuels",
+                        "topic": "Postez ici vos meilleurs clips à propos de FightLab (Commentaire, gameplay, discussion)",
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "264256"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "⭐vip",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📝Salons textuels",
+                        "topic": "Salon dédié aux Donateurs, suggestion, amélioration et autres questions",
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1024",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1024",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "VIP ⭐",
+                                "allow": "1024",
+                                "deny": "180224"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💿booster",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📝Salons textuels",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Nitro Booster💿",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1024",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1024",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "📷images",
+                        "nsfw": false,
+                        "rateLimitPerUser": 3600,
+                        "parent": "📝Salons textuels",
+                        "topic": "Images en rapport avec GTA & FightLab",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "264256"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3072",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💜partenaire",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📝Salons textuels",
+                        "topic": "Salon discussion avec les partenaires YT & Twitch",
+                        "permissions": [
+                            {
+                                "roleName": "Partenaire 💜",
+                                "allow": "1024",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1024",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💛tournois",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "📝Salons textuels",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Tournois💛",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "⛔Administration⛔",
+                "permissions": [
+                    {
+                        "roleName": "Fondateur 👑",
+                        "allow": "1049600",
+                        "deny": "0"
+                    },
+                    {
+                        "roleName": "Modérateur 📞",
+                        "allow": "1049600",
+                        "deny": "0"
+                    },
+                    {
+                        "roleName": "Non vérifié",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "Administrateur 📞",
+                        "allow": "1049600",
+                        "deny": "0"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "💻Bureau Développeur",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "📣annonces-staff",
+                        "nsfw": false,
+                        "rateLimitPerUser": 21600,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "2048"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "📮vote-staff",
+                        "nsfw": false,
+                        "rateLimitPerUser": 60,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "👀Bureau Privé",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "💛Tournoi",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Tournois💛",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1049600"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💬chat-staff",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": "Les absents ont toujours tort.",
+                        "permissions": [
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💬troll-staff",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "💜Partenaire",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Partenaire 💜",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1049600"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🌀Bureau Caché",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1049600"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1048576",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💬note-maps",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔧chat-dev",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1048576",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🌀Bureau Staff 1",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1048576"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1048576",
+                                "deny": "0"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🌀Bureau Staff 2",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1048576"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1048576",
+                                "deny": "0"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔧screenshots",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🌀Staff BDA",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1048576",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1048576"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔧dev-notes",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": "Notes réservées au développement",
+                        "permissions": [
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1048576",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Développeur 💻",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🆘Besoin d'aide ?",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "⛔Administration⛔",
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "2097664"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔧git",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": "Lien avec le github développement",
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "2048"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "2048"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "2048"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💻commandes",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Invite Tracker",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💻logs-mod",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💻logs-bot",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "🐟🐠",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Invite Tracker",
+                                "allow": "3072",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💻logs-boutique",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "⛔Administration⛔",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1048576",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1048576",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1048576",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "🆘Support",
+                "permissions": [
+                    {
+                        "roleName": "Mute ❗️",
+                        "allow": "0",
+                        "deny": "2112"
+                    },
+                    {
+                        "roleName": "Non vérifié",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🔨bugs-problems",
+                        "nsfw": false,
+                        "rateLimitPerUser": 60,
+                        "parent": "🆘Support",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "2112"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "💡suggestions",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🆘Support",
+                        "topic": "*suggest <idée>",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "2112"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🎫tickets-support",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🆘Support",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "2048"
+                            },
+                            {
+                                "roleName": "Ticket Tool Premium",
+                                "allow": "0",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Ticket Tool",
+                                "allow": "3072",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "🎫Tickets",
+                "permissions": [
+                    {
+                        "roleName": "Modérateur 📞",
+                        "allow": "1049616",
+                        "deny": "0"
+                    },
+                    {
+                        "roleName": "Administrateur 📞",
+                        "allow": "1049600",
+                        "deny": "0"
+                    },
+                    {
+                        "roleName": "Non vérifié",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "Fondateur 👑",
+                        "allow": "1049600",
+                        "deny": "0"
+                    },
+                    {
+                        "roleName": "carl-bot",
+                        "allow": "0",
+                        "deny": "7314341713"
+                    },
+                    {
+                        "roleName": "Bots",
+                        "allow": "268438544",
+                        "deny": "0"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🎫save-ticket",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Bots",
+                                "allow": "268438544",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "carl-bot",
+                                "allow": "0",
+                                "deny": "7314341713"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049616",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🎫log-ticket",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Bots",
+                                "allow": "268438544",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "carl-bot",
+                                "allow": "0",
+                                "deny": "7314341713"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049616",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "attente-akhy",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "FightLab",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": ".",
+                                "allow": "3088",
+                                "deny": "0"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "ticket-7857",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": ".",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "FightLab",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "ticket-7863",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": ".",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "FightLab",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "ticket-7864",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": ".",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "FightLab",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "ticket-7868",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": ".",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "FightLab",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "ticket-7869",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": ".",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "FightLab",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "ticket-7871",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "🎫Tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "Fondateur 👑",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": ".",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "FightLab",
+                                "allow": "3088",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "🎤Vocal",
+                "permissions": [
+                    {
+                        "roleName": "Non vérifié",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "Mute ❗️",
+                        "allow": "0",
+                        "deny": "2097664"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "⭐Vocal VIP",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "🎤Vocal",
+                        "permissions": [
+                            {
+                                "roleName": "Administrateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "VIP ⭐",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Amis ✔️",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1049600"
+                            },
+                            {
+                                "roleName": "Modérateur 📞",
+                                "allow": "1049600",
+                                "deny": "0"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🔊Vocal",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "🎤Vocal",
+                        "permissions": [
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "2097664"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🔊Vocal 1",
+                        "bitrate": 64000,
+                        "userLimit": 16,
+                        "parent": "🎤Vocal",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "2097664"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🔊Vocal 2",
+                        "bitrate": 64000,
+                        "userLimit": 16,
+                        "parent": "🎤Vocal",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "2097664"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🔊Vocal 3",
+                        "bitrate": 64000,
+                        "userLimit": 16,
+                        "parent": "🎤Vocal",
+                        "permissions": [
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "2097664"
+                            },
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "🔊Vocal 4",
+                        "bitrate": 64000,
+                        "userLimit": 16,
+                        "parent": "🎤Vocal",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Mute ❗️",
+                                "allow": "0",
+                                "deny": "2097664"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "AFK",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "🎤Vocal",
+                        "permissions": [
+                            {
+                                "roleName": "Non vérifié",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "2097664"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "others": []
+    },
+    "roles": [
+        {
+            "name": ".",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "8589934591",
+            "mentionable": false,
+            "position": 30,
+            "isEveryone": false
+        },
+        {
+            "name": "Fondateur 👑",
+            "color": "#ff0000",
+            "hoist": true,
+            "permissions": "8589934583",
+            "mentionable": false,
+            "position": 18,
+            "isEveryone": false
+        },
+        {
+            "name": "Administrateur 📞",
+            "color": "#e74c3c",
+            "hoist": true,
+            "permissions": "6710882247",
+            "mentionable": true,
+            "position": 17,
+            "isEveryone": false
+        },
+        {
+            "name": "Développeur 💻",
+            "color": "#3498db",
+            "hoist": true,
+            "permissions": "1051649",
+            "mentionable": false,
+            "position": 16,
+            "isEveryone": false
+        },
+        {
+            "name": "Modérateur 📞",
+            "color": "#e67e22",
+            "hoist": true,
+            "permissions": "1382173503431",
+            "mentionable": true,
+            "position": 15,
+            "isEveryone": false
+        },
+        {
+            "name": "Staff",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "103079215104",
+            "mentionable": false,
+            "position": 14,
+            "isEveryone": false
+        },
+        {
+            "name": "Partenaire 💜",
+            "color": "#9b59b6",
+            "hoist": true,
+            "permissions": "4399156801",
+            "mentionable": false,
+            "position": 13,
+            "isEveryone": false
+        },
+        {
+            "name": "Tournois💛",
+            "color": "#aca317",
+            "hoist": false,
+            "permissions": "4399156801",
+            "mentionable": false,
+            "position": 12,
+            "isEveryone": false
+        },
+        {
+            "name": "Amis ✔️",
+            "color": "#2ecc71",
+            "hoist": true,
+            "permissions": "6546640449",
+            "mentionable": false,
+            "position": 11,
+            "isEveryone": false
+        },
+        {
+            "name": "VIP ⭐",
+            "color": "#f1c40f",
+            "hoist": true,
+            "permissions": "6546640449",
+            "mentionable": false,
+            "position": 9,
+            "isEveryone": false
+        },
+        {
+            "name": "Supporters ⭐",
+            "color": "#ccb130",
+            "hoist": false,
+            "permissions": "6546640449",
+            "mentionable": false,
+            "position": 8,
+            "isEveryone": false
+        },
+        {
+            "name": "Chargeback ❗️",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "6546640449",
+            "mentionable": false,
+            "position": 6,
+            "isEveryone": false
+        },
+        {
+            "name": "Mute ❗️",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "4397057601",
+            "mentionable": false,
+            "position": 5,
+            "isEveryone": false
+        },
+        {
+            "name": "Avertissement ❗️",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "6546640449",
+            "mentionable": false,
+            "position": 4,
+            "isEveryone": false
+        },
+        {
+            "name": "Non vérifié",
+            "color": "#99aab5",
+            "hoist": false,
+            "permissions": "4295033856",
+            "mentionable": false,
+            "position": 3,
+            "isEveryone": false
+        },
+        {
+            "name": "Bots",
+            "color": "#607d8b",
+            "hoist": true,
+            "permissions": "4294967296",
+            "mentionable": false,
+            "position": 2,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "37080641",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [],
+    "emojis": [
+        {
+            "name": "FL",
+            "url": "https://cdn.discordapp.com/emojis/833922354538479636.png"
+        },
+        {
+            "name": "FightLab",
+            "url": "https://cdn.discordapp.com/emojis/833922523141242900.png"
+        },
+        {
+            "name": "check",
+            "url": "https://cdn.discordapp.com/emojis/864543639228121118.gif"
+        },
+        {
+            "name": "uncheck",
+            "url": "https://cdn.discordapp.com/emojis/939338680831733852.gif"
+        },
+        {
+            "name": "hmm",
+            "url": "https://cdn.discordapp.com/emojis/939339986812174346.gif"
+        },
+        {
+            "name": "clown",
+            "url": "https://cdn.discordapp.com/emojis/939340413309972541.png"
+        },
+        {
+            "name": "cheater",
+            "url": "https://cdn.discordapp.com/emojis/939341769508794468.png"
+        },
+        {
+            "name": "sheesh",
+            "url": "https://cdn.discordapp.com/emojis/939341784906072095.gif"
+        },
+        {
+            "name": "Kekw",
+            "url": "https://cdn.discordapp.com/emojis/939341798017495071.png"
+        },
+        {
+            "name": "fivem",
+            "url": "https://cdn.discordapp.com/emojis/939342162015977473.png"
+        },
+        {
+            "name": "kappa",
+            "url": "https://cdn.discordapp.com/emojis/939342588706684928.png"
+        }
+    ],
+    "members": [],
+    "createdTimestamp": 1673776405696,
+    "guildID": "812740604118433852",
+    "id": "1064120114514886656",
+    "iconURL": "https://cdn.discordapp.com/icons/812740604118433852/050c5545ceaf1884e44d6adbbc2023c9.webp",
+    "splashURL": "https://cdn.discordapp.com/splashes/812740604118433852/1e14ac88893ba7ff83d708040b652ce4.webp",
+    "bannerURL": "https://cdn.discordapp.com/banners/812740604118433852/7caf75f938435460a0ce0d7a3af91eed.webp"
+}
